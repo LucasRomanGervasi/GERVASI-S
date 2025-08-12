@@ -41,15 +41,17 @@
 
 <div class="bg-black min-h-screen text-white">
   <Navbar let:NavContainer color="primary">
-    <NavContainer class="border px-5 py-2 rounded-lg">
+    <NavContainer class="border-none px-5 py-2 rounded-lg">
       <NavBrand href="/">
         <img src="/image/logo.png" alt="Logo" />
       </NavBrand>
-      <NavHamburger />
+      <div class="nav-hamburger-custom">
+        <NavHamburger size="xs" />
+      </div>
       <NavUl>
         <NavLi href="#features">Beneficios</NavLi>
         <NavLi href="#how">Cómo funciona</NavLi>
-        <NavLi href="#contact">Contacto</NavLi>
+        <NavLi class="t-bold" href="#contact">Comenzá</NavLi>
       </NavUl>
     </NavContainer>
   </Navbar>
@@ -60,7 +62,7 @@
       <h1 class="hero-title">Automatizá tu atención con Agente IA</h1>
       <p class="hero-subtitle">Responde consultas con velocidad y estilo.</p>
       <a href="#contact" class="hero-cta">
-        Comenzar gratis
+        Comenzar
         <Icon icon="mdi:arrow-right" width="20" height="20" />
       </a>
     </div>
@@ -125,8 +127,8 @@
             <h3 class="timeline-title">
               <Icon
                 icon="mdi:clipboard-text"
-                width="24"
-                height="24"
+                width="40"
+                height="40"
                 class="inline mr-2"
               />
               Nos contás sobre tu negocio
@@ -144,8 +146,8 @@
             <h3 class="timeline-title">
               <Icon
                 icon="mdi:robot"
-                width="24"
-                height="24"
+                width="40"
+                height="40"
                 class="inline mr-2"
               />
               Configuramos tu agente IA
@@ -163,8 +165,8 @@
             <h3 class="timeline-title">
               <Icon
                 icon="mdi:whatsapp"
-                width="24"
-                height="24"
+                width="40"
+                height="40"
                 class="inline mr-2"
               />
               Lo conectamos a WhatsApp
@@ -182,8 +184,8 @@
             <h3 class="timeline-title">
               <Icon
                 icon="mdi:chart-line"
-                width="24"
-                height="24"
+                width="40"
+                height="40"
                 class="inline mr-2"
               />
               Monitoreamos y mejoramos
@@ -201,8 +203,8 @@
             <h3 class="timeline-title">
               <Icon
                 icon="mdi:headset"
-                width="24"
-                height="24"
+                width="40"
+                height="40"
                 class="inline mr-2"
               />
               Soporte continuo
@@ -228,15 +230,247 @@
     </div>
   </section>
 
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing-section">
+    <div class="pricing-container">
+      <div class="pricing-header">
+        <h2 class="pricing-title">Elegí tu plan</h2>
+        <p class="pricing-subtitle">
+          Soluciones flexibles para cada tipo de negocio. Comenzá gratis y
+          escalá cuando necesites más.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Plan Básico -->
+        <div class="pricing-card">
+          <h3 class="plan-name">Básico</h3>
+          <p class="plan-description">
+            Perfecto para empezar a automatizar tu atención
+          </p>
+          <div class="plan-price">
+            <div class="price-amount">Gratis</div>
+            <div class="price-period">por 7 días</div>
+          </div>
+          <ul class="plan-features">
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Hasta 100 mensajes/mes
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Respuestas automáticas básicas
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Integración WhatsApp
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Soporte por email
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:close-circle"
+                class="x-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Catálogo de productos
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:close-circle"
+                class="x-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Analytics avanzados
+            </li>
+          </ul>
+          <a class="plan-button secondary">Empezar gratis</a>
+        </div>
+
+        <!-- Plan Professional (Featured) -->
+        <div class="pricing-card featured">
+          <div class="featured-badge">Más Popular</div>
+          <h3 class="plan-name">Professional</h3>
+          <p class="plan-description">
+            Para negocios que quieren maximizar sus ventas
+          </p>
+          <div class="plan-price">
+            <div class="price-amount">$50.000</div>
+            <div class="price-period">por mes</div>
+          </div>
+          <ul class="plan-features">
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Mensajes ilimitados
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              IA personalizada con tu marca
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Catálogo completo de productos
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Agenda de turnos y reservas
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Analytics detallados
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Soporte prioritario
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Actualizaciones continuas
+            </li>
+          </ul>
+          <a class="plan-button primary">Elegir plan</a>
+        </div>
+
+        <!-- Plan Enterprise -->
+        <div class="pricing-card">
+          <h3 class="plan-name">Enterprise</h3>
+          <p class="plan-description">
+            Solución completa para grandes empresas
+          </p>
+          <div class="plan-price">
+            <div class="price-amount">Custom</div>
+            <div class="price-period">contactanos</div>
+          </div>
+          <ul class="plan-features">
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Todo del plan Professional
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Múltiples agentes IA
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Integración CRM/ERP
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              API personalizada
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Gerente de cuenta dedicado
+            </li>
+            <li>
+              <iconify-icon
+                icon="mdi:check-circle"
+                class="check-icon"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              SLA garantizado 99.9%
+            </li>
+          </ul>
+          <a href="#contact" class="plan-button secondary">Contactar ventas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
     <div class="contact-content">
-      <h2 class="contact-title">Solicitá tu Agente IA</h2>
+      <h2 class="contact-title">Solicitá tu Agente IA a medida</h2>
       <p class="contact-subtitle">
-        Dejanos tus datos y te contactamos para armar tu bot a medida.
+        Dejanos tus datos y te contactamos para armar tu agente personalizada.
       </p>
       <a
-        href="https://forms.gle/TU_FORM_DE_GOOGLE"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdyQC-d7k3Fv50_X-ITWlGq416ltglNtAysjDjmDg14JUq10w/viewform?usp=dialog"
         target="_blank"
         class="contact-button"
       >
@@ -288,7 +522,7 @@
     text-align: center;
     position: relative;
     z-index: 1;
-    max-width: 800px;
+    max-width: 900px;
     padding: 0 24px;
   }
 
@@ -329,6 +563,14 @@
   .hero-cta:hover {
     transform: translateY(-2px);
     box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+  }
+
+  :global(.nav-hamburger-custom svg) {
+    background-color: black !important;
+    border-radius: 0.5rem; /* opcional, si querés esquinas redondeadas */
+    height: 30px;
+    width: 30px;
+    padding: 0px;
   }
 
   /* Benefits Section */
@@ -590,7 +832,7 @@
   .contact-content {
     max-width: 600px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0;
   }
 
   .contact-title {
@@ -635,7 +877,241 @@
     padding: 32px 0;
     text-align: center;
   }
+  .pricing-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    position: relative;
+    overflow: hidden;
+  }
 
+  .pricing-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at 25% 25%,
+        rgba(59, 130, 246, 0.1) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 75% 75%,
+        rgba(139, 92, 246, 0.1) 0%,
+        transparent 50%
+      );
+  }
+
+  .pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .pricing-header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .pricing-title {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
+  }
+
+  .pricing-subtitle {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+
+  .pricing-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  .pricing-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    border-color: rgba(59, 130, 246, 0.3);
+  }
+
+  .pricing-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .pricing-card.featured {
+    border: 2px solid;
+    border: 1px solid linear-gradient(135deg, #3b82f6, #8b5cf6);
+    transform: scale(1.05);
+  }
+
+  .pricing-card.featured::before {
+    transform: scaleX(1);
+    height: 6px;
+  }
+
+  .featured-badge {
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    color: white;
+    padding: 8px 24px;
+    border-radius: 0 0 12px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .plan-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #f1f5f9;
+  }
+
+  .plan-description {
+    color: #94a3b8;
+    margin-bottom: 32px;
+    font-size: 1rem;
+  }
+
+  .plan-price {
+    margin-bottom: 32px;
+  }
+
+  .price-amount {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+  }
+
+  .price-period {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin-top: 8px;
+  }
+
+  .plan-features {
+    list-style: none;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .plan-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    color: #cbd5e1;
+    font-size: 1rem;
+  }
+
+  .plan-features .check-icon {
+    color: #22c55e;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+
+  .plan-features .x-icon {
+    color: #ef4444;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+
+  .plan-button {
+    width: 100%;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .plan-button.primary {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    color: white;
+  }
+
+  .plan-button.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(59, 130, 246, 0.3);
+  }
+
+  .plan-button.secondary {
+    background: transparent;
+    color: #3b82f6;
+    border: 2px solid #3b82f6;
+  }
+
+  .plan-button.secondary:hover {
+    background: #3b82f6;
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .pricing-note {
+    text-align: center;
+    margin-top: 40px;
+    padding: 24px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 16px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+  }
+
+  .pricing-note h4 {
+    color: #3b82f6;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+  }
+
+  .pricing-note p {
+    color: #94a3b8;
+  }
   /* Mobile Responsive */
   @media (max-width: 768px) {
     .section-title,
@@ -665,6 +1141,23 @@
 
     .cta-section {
       padding: 32px 24px;
+    }
+    .pricing-title {
+      font-size: 2.5rem;
+    }
+
+    .pricing-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .pricing-card.featured {
+      transform: none;
+      margin-bottom: 24px;
+    }
+
+    .price-amount {
+      font-size: 2.8rem;
     }
   }
 </style>
